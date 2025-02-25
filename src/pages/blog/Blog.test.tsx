@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaTags, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import motion
-import "./style.css";
+import "./style.css"; 
 
 const Blog = () => {
   useEffect(() => {
