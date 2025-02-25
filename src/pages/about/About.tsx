@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom"
-import AboutHero from "../../components/hero/Abouthero.test";
+import AboutHero from "../../components/hero/AboutHero.test";
 
 
 

@@ -5,6 +5,10 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import "./style.css";
+import { JSX } from "react";
+
+
+
 
 interface Company {
   name: string;

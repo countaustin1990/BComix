@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import AboutHero from "../../components/hero/Abouthero.test";
+import Abouthero from "../../components/hero/AboutHero.test";
 
 const About: React.FC = () => {
   useEffect(() => {
@@ -58,7 +58,7 @@ const About: React.FC = () => {
         </motion.div>
       </section>
 
-      <AboutHero />
+      <Abouthero />
     </div>
   );
 };
