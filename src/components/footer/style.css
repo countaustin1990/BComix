@@ -1,0 +1,14 @@
+.social-icon {
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+  }
+.social-icon:hover {
+    color: #ffc107; /* Change to your preferred hover color */
+  }
+  
+@media (max-width: 768px) {
+    footer .text-md-start {
+      text-align: center !important;
+    }
+  }
+  

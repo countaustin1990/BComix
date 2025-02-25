@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#App {
+  background: linear-gradient(to right, #1a395a, #6f42c1);
+}
+
+body {
+    /*font-family: "Lato", serif;*/
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.navbar {
+    background: linear-gradient(to right, #1a395a, #6f42c1);
+}
+
+.hero {
+    background: linear-gradient(to right, #1a395a, #6f42c1);
+    margin-top: 10px;
+    min-height: 50svh;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    padding: 20px;
+}
+.text-area {
+    margin-top: 30px;
+}
+
+.hero-button {
+    background: transparent;
+    border: #5a32a3 solid 1px;
+    color: #5a32a3;
+    border-radius: 10px;
+}
+
+.hero-button:hover {
+   
+    background: linear-gradient(to right, #0056b3, #5a32a3);
+    color: white;
+   
+}
+
+.hero-img {
+    margin-top: 0;
+    height: 40svh;
+    border-radius: 10px;
+}
+
+/*So Help Me God*/
+  
+  .hero-content {
+    padding: 20px;
+    text-align: center; /* Center the text */
+    max-width: 960px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .hero-title {
+    font-size: 3rem; /* Example font size */
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem; /* Example font size */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 2rem;
+  }
+  
+  .hero-cta {
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: center; /* Center the buttons */
+    gap: 1rem; /* Add spacing between buttons */
+  }
+  
+  .btn { /* Basic button styling */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: linear-gradient(to right, #0056b3, #5a32a3);/* Example primary color */
+    color: white;
+  }
+
+  /* Container for the entire scroll bar */
+.movie-companies-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide horizontal overflow */
+  }
+  
+  /* Scrollable container for company icons */
+  .movie-companies-scroll {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Optional: for smooth scrolling */
+    padding: 10px 0; /* Horizontal padding to prevent icons from touching the edges */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+    justify-content: flex-start; /* Align icons to the left */
+  }
+  
+  .movie-companies-scroll::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, Opera */
+  }
+  
+  /* Individual company icon styling */
+  .company-icon {
+    margin: 0 10px; /* Space between icons */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0; /* Prevent shrinking of icons */
+  }
+  
+  /* Icon styling */
+  .company-icon img {
+    width: 50px; /* Icon size */
+    height: 50px;
+    object-fit: contain; /* Maintain aspect ratio */
+    cursor: pointer; /* Indicate it's clickable */
+  }
+  
+  /* Scroll buttons */
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    width: 30px; /* Button size */
+    height: 30px; /* Ensure the button is circular */
+    border-radius: 50%; /* Round the buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Left scroll button */
+  .left-scroll {
+    left: 0;
+  }
+  
+  /* Right scroll button */
+  .right-scroll {
+    right: 0;
+  }
+  
+  /* Scroll button hover effect */
+  .scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker shade when hovering */
+  }
+
+  Footer {
+    background: linear-gradient(to right, #1a395a, #6f42c1);
+  }
+  
+  /* Optional: Mobile view for better button positioning */
+  @media (max-width: 768px) {
+    .scroll-button {
+      width: 25px;
+      height: 25px;
+    }
+
+    .hero-text {
+      font-size: 30px;
+    }
+  
+    .company-icon img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  

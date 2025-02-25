@@ -1,0 +1,13 @@
+.contact-button {
+    background: transparent;
+    border: #5a32a3 solid 1px;
+    color: #5a32a3;
+    border-radius: 10px;
+}
+
+.contact-button:hover {
+   
+    background: linear-gradient(to right, #0056b3, #5a32a3);
+    color: white;
+   
+}

@@ -1,0 +1,13 @@
+.list-unstyled {
+    color: linear-gradient(to right, #0056b3, #5a32a3);
+    line-height: 40px;
+}
+
+.styler {
+    cursor: pointer;
+}
+
+.side-box {
+    background: linear-gradient(to right, #0056b3, #5a32a3);
+    color: #ffff;
+}
