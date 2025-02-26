@@ -76,7 +76,7 @@ const Blog = () => {
             className="text-muted"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+            transition={{ delay: 0.3, duration: 0.6 }} 
           >
             Stay updated with the latest comic trends.
           </motion.p>
