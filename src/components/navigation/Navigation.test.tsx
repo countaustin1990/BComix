@@ -68,7 +68,7 @@ const Navigation: React.FC = () => {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
             >
-              <ul className="navbar-nav text-center">
+              <ul className="navbar-nav text-center z-index-5">
                 {[
                   { to: "/", label: "Home", icon: "bi-house-door" },
                   { to: "/about", label: "About", icon: "bi-info-circle" },
