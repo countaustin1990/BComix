@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { PageContentProvider } from "./components/navigation/Navigation.test"; // ✅ FIXED
+//import { PageContentProvider } from "./components/navigation/Navigation.test"; // ✅ FIXED
 import Navigation from "./components/navigation/Navigation";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About.test";
@@ -12,7 +12,7 @@ import Books from "./components/books/Books";
 
 const App: React.FC = () => {
   return (
-    <PageContentProvider> {/* ✅ Wrap the entire app */}
+    
       <Router>
         <Navigation />
         <ToTheTop />
@@ -25,7 +25,7 @@ const App: React.FC = () => {
         </Routes>
         <Footer />
       </Router>
-    </PageContentProvider>
+    
   );
 };
 
