@@ -6,7 +6,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About.test";
 import Contact from "./pages/contact/Contact.test";
 import Footer from "./components/footer/Footer.test";
-import Blog from "./pages/blog/Blog.test";
+import Blog from "./pages/blog/Blog.test"; 
 import ToTheTop from "./components/tothetop/ToTheTop";
 import Books from "./components/books/Books";
 

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaTags, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import motion
-import "./style.css";
-
+import "./style.css"; 
+ 
 const Blog = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,7 +15,11 @@ const Blog = () => {
       title: "Diamond Comic Distributors Files for Bankruptcy",
       excerpt: "On January 14, 2025, Diamond Comic Distributors, once a dominant force in comic book distribution, filed for Chapter 11 bankruptcy...",
       date: "Feb 22, 2025",
+<<<<<<< HEAD
       category: "Gloria Onamdu",
+=======
+      category: "Thomas Foster",
+>>>>>>> 0487938b1e02c5a81c15bc385a8058c911ee5083
       image: "https://via.placeholder.com/600x300",
     },
     {
@@ -23,7 +27,11 @@ const Blog = () => {
       title: "Impact of AI on Comic Creation",
       excerpt: "The integration of artificial intelligence into comic book creation has sparked debate among artists and writers...",
       date: "Feb 20, 2025",
+<<<<<<< HEAD
       category: "Belic Vendenza",
+=======
+      category: "Greg Davids",
+>>>>>>> 0487938b1e02c5a81c15bc385a8058c911ee5083
       image: "https://via.placeholder.com/600x300",
     },
     {
@@ -31,7 +39,11 @@ const Blog = () => {
         title: "DC Comics Revives Vertigo Imprint",
         excerpt: "In October 2024, DC Comics announced the revival of its Vertigo imprint, aiming to provide a platform for mature and avant-garde storytelling. This relaunch includes titles like The Nice House by the Sea and the integration of The Sandman Universe series.",
         date: "Feb 20, 2025",
+<<<<<<< HEAD
         category: "Malik Ikirat",
+=======
+        category: "Nijen Pitano",
+>>>>>>> 0487938b1e02c5a81c15bc385a8058c911ee5083
         image: "https://via.placeholder.com/600x300",
       },
       {
@@ -39,7 +51,11 @@ const Blog = () => {
         title: "Growth Projections",
         excerpt: "DC has introduced fresh creative directions for iconic characters. Matt Fraction is set to take over writing for Batman, starting with a new issue #1 in September 2025, featuring a redesigned costume and Batmobile. Additionally, a new Supergirl series by Sophie Campbell and Tamra Bonvillain is slated for release on May 14, 2025, focusing on Kara Zor-El's return to Midvale.",
         date: "Feb 20, 2025",
+<<<<<<< HEAD
         category: "Fresh Suohns",
+=======
+        category: "Nathan Claudius"
+>>>>>>> 0487938b1e02c5a81c15bc385a8058c911ee5083
         image: "https://via.placeholder.com/600x300",
       },
       {
@@ -47,7 +63,11 @@ const Blog = () => {
         title: "New Creative Teams and Series",
         excerpt: "Despite challenges, the comic book market is projected to grow by approximately USD 3.25 billion between 2024 and 2028. This growth is attributed to the success of TV shows and movies based on comic book properties, as well as strategic collaborations and partnerships within the industry.",
         date: "Feb 20, 2025",
+<<<<<<< HEAD
         category: "David Break",
+=======
+        category: "Hotan Benga",
+>>>>>>> 0487938b1e02c5a81c15bc385a8058c911ee5083
         image: "https://via.placeholder.com/600x300",
       },
   ]);
