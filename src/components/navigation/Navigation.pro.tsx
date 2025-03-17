@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-// Context for page data
+// Create a context to store page data
 const PageContentContext = createContext<{ pages: Page[] }>({ pages: [] });
 
 interface Page {
@@ -15,7 +15,7 @@ interface Page {
   content: string;
 }
 
-// Page content with full descriptions
+// Exact content for each page
 const pages: Page[] = [
   {
     to: "/",
@@ -47,7 +47,7 @@ const pages: Page[] = [
   }
 ];
 
-// Navigation component with content-aware search
+// Navigation component with search functionality
 export const Navigation: React.FC = () => {
   const { pages } = useContext(PageContentContext);
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -65,7 +65,6 @@ export const Navigation: React.FC = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Search function checking titles, keywords, and content
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value.toLowerCase();
     setSearchQuery(query);
@@ -120,7 +119,6 @@ export const Navigation: React.FC = () => {
             ))}
           </ul>
 
-          {/* Search bar*/} 
           <div className="d-flex position-relative" ref={searchRef}>
             <motion.input
               type="text"
@@ -130,35 +128,28 @@ export const Navigation: React.FC = () => {
               onChange={handleSearch}
               whileFocus={{ scale: 1.05, transition: { duration: 0.2 } }}
             />
-            
-            Search dropdown with filtered results 
             <AnimatePresence>
-              {searchQuery && (
+              {searchQuery && filteredResults.length > 0 && (
                 <motion.div
                   className="position-absolute top-100 start-0 w-100 bg-dark text-white shadow-lg rounded mt-1 p-2"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                 >
-                  {filteredResults.length > 0 ? (
-                    filteredResults.map((item) => (
-                      <motion.div key={item.to} className="p-2 border-bottom" whileHover={{ scale: 1.05 }}>
-                        <Link
-                          className="text-light text-decoration-none d-block"
-                          to={item.to}
-                          onClick={() => setSearchQuery("")}
-                        >
-                          <i className={`bi ${item.icon}`}></i> <strong>{item.title}</strong>
-                        </Link>
-                        <small className="d-block text-muted">{item.content}</small>
-                      </motion.div>
-                    ))
-                  ) : (
-                    <div className="p-2 text-muted">No results found</div>
-                  )}
+                  {filteredResults.map((item) => (
+                    <motion.div key={item.to} className="p-2 border-bottom" whileHover={{ scale: 1.05 }}>
+                      <Link
+                        className="text-light text-decoration-none d-block"
+                        to={item.to}
+                        onClick={() => setSearchQuery("")}
+                      >
+                        <i className={`bi ${item.icon}`}></i> {item.title}
+                      </Link>
+                      <small className="d-block text-muted">{item.content}</small>
+                    </motion.div>
+                  ))}
                 </motion.div>
               )}
-
             </AnimatePresence>
           </div>
         </div>
@@ -167,7 +158,7 @@ export const Navigation: React.FC = () => {
   );
 };
 
-// Provider to wrap the app
+// PageContentProvider to wrap around the app
 export const PageContentProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return <PageContentContext.Provider value={{ pages }}>{children}</PageContentContext.Provider>;
 };

@@ -36,6 +36,7 @@ const Footer = () => {
                 { name: "About", icon: "bi-info-circle", path: "/about" },
                 { name: "Contact", icon: "bi-envelope", path: "/contact" },
                 { name: "Blog", icon: "bi-newspaper", path: "/blog" },
+                { name: "Books", icon: "bi-newspaper", path: "/books" },
               ].map((link, index) => (
                 <li key={index} className="nav-item">
                   <Link className="nav-link text-light" to={link.path}>

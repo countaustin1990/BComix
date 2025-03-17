@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import "./style.css";
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,6 +47,7 @@ const Navigation: React.FC = () => {
               { to: "/about", label: "About", icon: "bi-info-circle" },
               { to: "/contact", label: "Contact", icon: "bi-envelope" },
               { to: "/blog", label: "Blog", icon: "bi-newspaper" },
+              {to: "/books", label: "Books", icon: "bi-newspaper" },
             ].map((item, index) => (
               <motion.li
                 key={index}
@@ -65,7 +67,7 @@ const Navigation: React.FC = () => {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className="w-100 bg-dark text-white p-3 position-absolute top-100 start-0 end-0 shadow-lg"
+              className="itech w-100 bg-dark text-white p-3 position-absolute top-100 start-0 end-0 shadow-lg"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -77,6 +79,7 @@ const Navigation: React.FC = () => {
                   { to: "/about", label: "About", icon: "bi-info-circle" },
                   { to: "/contact", label: "Contact", icon: "bi-envelope" },
                   { to: "/blog", label: "Blog", icon: "bi-newspaper" },
+                  { to: "/books", label: "Books", icon: "bi-newspaper" },
                 ].map((item, index) => (
                   <motion.li
                     key={index}

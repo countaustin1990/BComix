@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Hero from "../../components/hero/Hero";
 import HorizontalScrollBar from "../../components/horizontalscrollbar/HorizontalScrollBar.test";
+import BooksSection from "../../components/homebooks/HomeBooks";
 
 const Home = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
+      <BooksSection/>
       <HorizontalScrollBar />
     </div>
   );
